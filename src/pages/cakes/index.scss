@@ -1,0 +1,96 @@
+.index_view{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .shopinfo_view{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid red;
+        .switch_view{
+            width: 25%;
+            height: 65%;
+            display: flex;
+            flex-direction: row;
+            border: 1px solid gray;
+            border-radius: 50px;
+            font-size: small;
+            .switech_operation{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                width: 45%;
+                margin: 2px;
+                &Selected{
+                    color: white;
+                    width: 55%;
+                    background: darkgray;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50px;
+                    margin: 2px;
+                }
+            }
+           
+                
+        }
+    }
+    .order_view{
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        .type_view{
+            height: 100%;
+            width: 20%;
+            border-right: 1px solid black;
+            .type_swiper{
+                height: 100%;
+                border: 1px solid yellow;
+
+                .item_view{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid red;
+                    font-size: small;
+                    Image{
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                }
+                .item_view_hover{
+                    background: blue;
+                }
+            }
+        }
+        .goods_view{
+            height: 100%;
+            width: 80%;
+            .goods_swiper{
+                height: 100%;
+                border: 1px solid green;
+                .item_view{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border: 1px solid red;
+                    Image{
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                }
+            }
+        }
+
+    }
+}

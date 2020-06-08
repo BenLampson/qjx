@@ -1,0 +1,25 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="index_view">
+        <swiper indicator-color="#999" indicator-active-color="#333" vertical="{{false}}" circular="{{true}}" indicator-dots="{{true}}" autoplay="{{true}}" class="swiper_view">
+            <swiper-item>
+                <view class="demo-text-1">11</view>
+            </swiper-item>
+            <swiper-item>
+                <view class="demo-text-2">2</view>
+            </swiper-item>
+            <swiper-item>
+                <view class="demo-text-3">3</view>
+            </swiper-item>
+        </swiper>
+        <view class="operation_view">
+            <view class="btn_View" bindtap="handleOrderClicked">
+                <image src="../../resource/img/category.png" mode="widthFix" class="btn_image"></image><text>堂食甜品</text>
+            </view>
+            <view class="btn_View" bindtap="handleCakeClicked">
+                <image src="../../resource/img/category.png" mode="widthFix" class="btn_image"></image><text>生日蛋糕</text>
+            </view>
+        </view>
+        <view class="points_view"><text>我的积分</text><text>100</text>
+        </view>
+    </view>
+</block>

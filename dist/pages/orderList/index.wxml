@@ -1,0 +1,5 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="example-item">
+        <button>订单</button>
+    </view>
+</block>

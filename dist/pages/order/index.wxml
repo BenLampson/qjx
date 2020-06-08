@@ -1,0 +1,26 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="index_view">
+        <view class="shopinfo_view"><text>门店信息：西安</text>
+            <view class="switch_view">
+                <view class="{{classAName}}" bindtap="switchClicked"><text>自取</text>
+                </view>
+                <view class="{{classBName}}" bindtap="switchClicked"><text>外卖</text>
+                </view>
+            </view>
+        </view>
+        <view class="order_view">
+            <view class="type_view">
+                <scroll-view class="type_swiper" scroll-x="{{false}}" scroll-y="{{false}}" scroll-with-animation="{{true}}">
+                    <view class="{{vitem.className}}" id="{{'typeView' + index}}" bindtap="typeViewOnClicked" wx:for="{{loopArray356}}" wx:for-item="vitem" wx:for-index="index">
+                        <image src="{{vitem.$original.icon}}"></image>{{vitem.$original.name}}</view>
+                </scroll-view>
+            </view>
+            <view class="goods_view">
+                <scroll-view class="goods_swiper" scroll-into-view="{{'goodsView' + goodIndex}}" scroll-x="{{false}}" scroll-y="{{true}}" bindscroll="onScroll" scroll-with-animation="{{true}}">
+                    <view class="item_view" id="{{'goodsView' + index}}" wx:for="{{goods}}" wx:for-item="vitem" wx:for-index="index">
+                        <image src="{{vitem.icon}}"></image>{{vitem.name}}{{"sdasda"}}{{"sada"}}</view>
+                </scroll-view>
+            </view>
+        </view>
+    </view>
+</block>

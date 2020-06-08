@@ -1,0 +1,101 @@
+.index_view {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.index_view .shopinfo_view {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx;
+  box-shadow: #ececec 0 0 0 6rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.index_view .shopinfo_view .switch_view {
+  width: 25%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid gray;
+  border-radius: 50rpx;
+  font-size: small;
+}
+.index_view .shopinfo_view .switch_view .switech_operation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rpx;
+  width: 45%;
+  margin: 2rpx;
+}
+.index_view .shopinfo_view .switch_view .switech_operationSelected {
+  color: white;
+  width: 55%;
+  background: darkgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rpx;
+  margin: 2rpx;
+}
+.index_view .order_view {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 7rpx;
+}
+.index_view .order_view .type_view {
+  height: 100%;
+  width: 20%;
+}
+.index_view .order_view .type_view .type_swiper {
+  height: 100%;
+  background: #e6e6e6;
+}
+.index_view .order_view .type_view .type_swiper .item_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+.index_view .order_view .type_view .type_swiper .item_view Image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.index_view .order_view .type_view .type_swiper .item_viewSelected {
+  border-left: 10rpx solid palegreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  background: white;
+}
+.index_view .order_view .type_view .type_swiper .item_viewSelected Image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.index_view .order_view .goods_view {
+  height: 100%;
+  width: 80%;
+}
+.index_view .order_view .goods_view .goods_swiper {
+  height: 100%;
+}
+.index_view .order_view .goods_view .goods_swiper .item_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20rpx;
+}
+.index_view .order_view .goods_view .goods_swiper .item_view Image {
+  width: 150rpx;
+  height: 150rpx;
+}
